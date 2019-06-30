@@ -13,7 +13,7 @@ struct PlayerList : View {
         NavigationView {
             List(players) {
                 player in
-                NavigationButton(destination: MainContent()) {
+                NavigationButton(destination: MainContent(player: player)) {
                 PlayerRow(player: player)
             }.navigationBarTitle(Text("NBA Players"), displayMode: .large)
             }
